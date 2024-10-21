@@ -7,10 +7,8 @@ class Employee {
         this.password = password;
     }
 }
-
 const employees = new Map<Number, Employee>();
 
-//add
 function addEmployee(empId: Number, password: string): boolean {
     if (employees.has(empId)) {
         console.log(`Employee ID ${empId} already exists.`);
@@ -21,17 +19,16 @@ function addEmployee(empId: Number, password: string): boolean {
     return true;
 }
 
-//access
 function getAllEmployees(): Employee[] {
     return Array.from(employees.values());
 }
 
-// Adding employees
 addEmployee(1, "password123");
 addEmployee(1, "mypassword");
 addEmployee(3, "anotherpassword");
 
 const employeesList = getAllEmployees();
+
 employeesList.forEach(employee => {
     console.log(`Employee ID: ${employee.empId}, Password: ${employee.password}`);
 });

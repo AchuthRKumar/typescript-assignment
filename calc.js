@@ -21,7 +21,7 @@ function div(a, b) {
     var rem = a / b;
     return rem;
 }
-var sum = add(1, 3);
+var sum = add(-1, -3);
 var subt = sub(5, 3);
 var pro = mul(5, 5);
 var rem = div(10, 2);

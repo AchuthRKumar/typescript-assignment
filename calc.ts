@@ -28,7 +28,7 @@ function div(a: number ,b: number){
     return rem;
 }
 
-const sum = add(1 ,3);
+const sum = add(-1, -3);
 const subt = sub(5, 3);
 const pro = mul(5 ,5);
 const rem = div(10, 2);
