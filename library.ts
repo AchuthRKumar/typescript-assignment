@@ -98,8 +98,8 @@ class Library {
 const library = new Library();
 
 // Creating authors
-const author1 = new Author(1, "J.K. Rowling", "British author, best known for the Harry Potter series.");
-const author2 = new Author(2, "J.R.R. Tolkien", "English writer, best known for The Hobbit and The Lord of the Rings.");
+const author1 = new Author(1, "J.K. Rowling", "British author");
+const author2 = new Author(2, "J.R.R. Tolkien", "English writer");
 
 // Adding authors to the library
 library.addAuthor(author1);
